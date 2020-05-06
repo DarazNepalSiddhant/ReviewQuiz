@@ -1,0 +1,381 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        #win,
+        #lose,
+        #Question02,
+        #Question03,
+        #Question04,
+        #Question05,
+        #Question06,
+        #Question07,
+        #Question08,
+        #Question09,
+        #Question10,
+        #Question11,
+        #case00,
+        #case01,
+        #case02,
+        #case03,
+        #case04,
+        #case05,
+        #case06,
+        #case07,
+        #case08,
+        #case09,
+        #case10,
+        #case11 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="Question01">
+            <div class="col-sm-12 col-xs-12"> <img src="images/1/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/1/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q1A1"><img src="images/1/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q1A2"><img src="images/1/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q1A3"><img src="images/1/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q1A4"><img src="images/1/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question02" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/2/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/2/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q2A1"><img src="images/2/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q2A2"><img src="images/2/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q2A3"><img src="images/2/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q2A4"><img src="images/2/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question03" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/3/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/3/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q3A1"><img src="images/3/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q3A2"><img src="images/3/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q3A3"><img src="images/3/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q3A4"><img src="images/3/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question04" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/4/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/4/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q4A1"><img src="images/4/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q4A2"><img src="images/4/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q4A3"><img src="images/4/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q4A4"><img src="images/4/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question05" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/5/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/5/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q5A1"><img src="images/5/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q5A2"><img src="images/5/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q5A3"><img src="images/5/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q5A4"><img src="images/5/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question06" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/6/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/6/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q6A1"><img src="images/6/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q6A2"><img src="images/6/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q6A3"><img src="images/6/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q6A4"><img src="images/6/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question07" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/7/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/7/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q7A1"><img src="images/7/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q7A2"><img src="images/7/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q7A3"><img src="images/7/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q7A4"><img src="images/7/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question08" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/8/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/8/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q8A1"><img src="images/8/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q8A2"><img src="images/8/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q8A3"><img src="images/8/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q8A4"><img src="images/8/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question09" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/9/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/9/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q9A1"><img src="images/9/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q9A2"><img src="images/9/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q9A3"><img src="images/9/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q9A4"><img src="images/9/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question10" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/10/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/10/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q10A1"><img src="images/10/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q10A2"><img src="images/10/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q10A3"><img src="images/10/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q10A4"><img src="images/10/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="Question11" style="display: none;">
+            <div class="col-sm-12 col-xs-12"> <img src="images/11/1.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12"> <img src="images/11/2.gif" class="img-responsive"> </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q11A1"><img src="images/11/3.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q11A2"><img src="images/11/4.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q11A3"><img src="images/11/5.gif" class="img-responsive"></a>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <a id="Q11A4"><img src="images/11/6.png" class="img-responsive"></a>
+            </div>
+        </div>
+        <div class="row" id="case00">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/0.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case01">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/1.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case02">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/2.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case03">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/3.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case04">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/4.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case05">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/5.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case06">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/6.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case07">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/7.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case08">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/8.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case09">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/9.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case10">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/10.png" class="img-responsive"> </div>
+
+        </div>
+        <div class="row" id="case11">
+            <div class="col-sm-12 col-xs-12"> <img src="images/case/11.png" class="img-responsive"> </div>
+
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var correct = 0;
+                $("#Q1A1, #Q1A2, #Q1A3, #Q1A4").click(function() {
+                    console.log($(this).attr("id"));
+                    if ($(this).attr("id") == "Q1A4")
+                        correct = correct + 1;
+                    $("#Question01").hide();
+                    $("#Question02").css("display", "block");
+                });
+                $("#Q2A1, #Q2A2, #Q2A3, #Q2A4").click(function() {
+                    if ($(this).attr("id") == "Q2A1")
+                        correct = correct + 1;
+                    $("#Question02").hide();
+                    $("#Question03").css("display", "block");
+                });
+                $("#Q3A1, #Q3A2, #Q3A3, #Q3A4").click(function() {
+                    if ($(this).attr("id") == "Q3A4")
+                        correct = correct + 1;
+                    $("#Question03").hide();
+                    $("#Question04").css("display", "block");
+                });
+                $("#Q4A1, #Q4A2, #Q4A3, #Q4A4").click(function() {
+                    if ($(this).attr("id") == "Q4A4")
+                        correct = correct + 1;
+                    $("#Question04").hide();
+                    $("#Question05").css("display", "block");
+                });
+                $("#Q5A1, #Q5A2, #Q5A3, #Q5A4").click(function() {
+                    if ($(this).attr("id") == "Q5A4")
+                        correct = correct + 1;
+                    $("#Question05").hide();
+                    $("#Question06").css("display", "block");
+                });
+                $("#Q6A1, #Q6A2, #Q6A3, #Q6A4").click(function() {
+                    if ($(this).attr("id") == "Q6A3")
+                        correct = correct + 1;
+                    $("#Question06").hide();
+                    $("#Question07").css("display", "block");
+                });
+                $("#Q7A1, #Q7A2, #Q7A3, #Q7A4").click(function() {
+                    if ($(this).attr("id") == "Q7A3")
+                        correct = correct + 1;
+                    $("#Question07").hide();
+                    $("#Question08").css("display", "block");
+                });
+                $("#Q8A1, #Q8A2, #Q8A3, #Q8A4").click(function() {
+                    if ($(this).attr("id") == "Q8A2")
+                        correct = correct + 1;
+                    $("#Question08").hide();
+                    $("#Question09").css("display", "block");
+                });
+                $("#Q9A1, #Q9A2, #Q9A3, #Q9A4").click(function() {
+                    if ($(this).attr("id") == "Q9A4")
+                        correct = correct + 1;
+                    $("#Question09").hide();
+                    $("#Question10").css("display", "block");
+                });
+                $("#Q10A1, #Q10A2, #Q10A3, #Q10A4").click(function() {
+                    if ($(this).attr("id") == "Q10A1")
+                        correct = correct + 1;
+                    $("#Question10").hide();
+                    $("#Question11").css("display", "block");
+                });
+                $("#Q11A1, #Q11A2, #Q11A3, #Q11A4").click(function() {
+                    if ($(this).attr("id") == "Q11A4")
+                        correct = correct + 1;
+                    $("#Question11").hide();
+                    showCase();
+                });
+
+                function showCase() {
+                    switch (correct) {
+                        case 0:
+                            $("#case00").css("display", "block");
+                            break;
+                        case 1:
+                            $("#case01").css("display", "block");
+                            break;
+                        case 2:
+                            $("#case02").css("display", "block");
+                            break;
+                        case 3:
+                            $("#case03").css("display", "block");
+                            break;
+                        case 4:
+                            $("#case04").css("display", "block");
+                            break;
+                        case 5:
+                            $("#case05").css("display", "block");
+                            break;
+                        case 6:
+                            $("#case06").css("display", "block");
+                            break;
+                        case 7:
+                            $("#case07").css("display", "block");
+                            break;
+                        case 8:
+                            $("#case08").css("display", "block");
+                            break;
+                        case 9:
+                            $("#case09").css("display", "block");
+                            break;
+                        case 10:
+                            $("#case10").css("display", "block");
+                            break;
+                        case 11:
+                            $("#case11").css("display", "block");
+                            break;
+                    }
+                }
+            });
+        </script>
+</body>
+
+</html>
